@@ -1,19 +1,15 @@
 class Solution {
     public int maximizeGreatness(int[] nums) {
-        PriorityQueue<Integer> pq1 = new PriorityQueue();
-        PriorityQueue<Integer> pq2 = new PriorityQueue();
-        for(int i: nums){
-            pq1.add(i);
-            pq2.add(i);
-        }
-        int count = 0;
-        while(!pq2.isEmpty()){
-            if(pq1.peek() < pq2.peek()){
-                pq1.poll();
-                count++;
+        Arrays.sort(nums);
+        int ans = 0; 
+        int i =0;
+        for(int j=1;j<nums.length;j++){
+            if(nums[i]<nums[j]){
+                ans++;
+                i++;
             }
-            pq2.poll();
         }
-        return count;
+
+        return ans;
     }
 }
