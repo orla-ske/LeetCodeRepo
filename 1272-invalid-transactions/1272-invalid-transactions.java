@@ -1,50 +1,41 @@
 class Solution {
-
-    class Transaction{
-        String name;
-        int time;
-        int amount;
-        String city;
-        public Transaction(String line){
-			// split the string and parse it
-            String[] split = line.split(",");
-            name = split[0];
-            time = Integer.parseInt(split[1]);
-            amount = Integer.parseInt(split[2]);
-            city = split[3];
-        }
-    }
     public List<String> invalidTransactions(String[] transactions) {
-        List<String> invalid = new ArrayList<>();
-        Map<String, List<Transaction>> map = new HashMap<>();
+        List<String> invalid = new ArrayList<String> (); 
+        int i = 0;
+        int j = 0;
 
-        for(String transaction : transactions){
-            Transaction t = new Transaction(transaction);
-            map.putIfAbsent(t.name, new ArrayList<>());
-            map.get(t.name).add(t);
-        }
+        for(i = 0; i<transactions.length;i++){
+            String [] trans = transactions[i].split(",");
+            String cName = trans[0]; 
+            int cAmount = Integer.parseInt(trans[2]); 
+            int cTime = Integer.parseInt(trans[1]); 
+            String cCity = trans[3]; 
 
-        for(String transaction : transactions){
-            Transaction t = new Transaction(transaction);
-	
-            if(!isValid(t, map.getOrDefault(t.name, new ArrayList<>()))){
-                invalid.add(transaction);
+            if(cAmount> 1000){
+                invalid.add(transactions[i]); 
+                continue;
+            }
+
+            boolean isInvalid = false; 
+
+            for( j = 0; j<transactions.length;j++){
+                String [] next = transactions[j].split(","); 
+                String nName = next[0]; 
+                int nAmount = Integer.parseInt(next[2]); 
+                int nTime = Integer.parseInt(next[1]); 
+                String nCity = next[3];
+
+                if(i!=j){
+                    if(cName.equals(nName) && !cCity.equals(nCity) && Math.abs(cTime-nTime)<=60){
+                        isInvalid=true;
+                        break;
+                    }
+                }
+            }
+            if(isInvalid){
+                invalid.add(transactions[i]);
             }
         }
         return invalid;
-    }
-    public boolean isValid(Transaction t, List<Transaction> list){
-
-        if(t.amount > 1000){
-			return false;
-		}
-
-        for(Transaction ta : list){
-            if(Math.abs(ta.time - t.time) <= 60 && !ta.city.equals(t.city)){
-				return false;
-			}
-        }
-
-        return true;
     }
 }
