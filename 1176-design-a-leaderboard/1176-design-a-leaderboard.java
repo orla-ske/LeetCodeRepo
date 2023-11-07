@@ -1,27 +1,29 @@
 class Leaderboard {
-
-    HashMap<Integer, Integer> scores; 
-
+    Map <Integer, Integer> leaderBoard;
     public Leaderboard() {
-        scores = new HashMap<>();
+        leaderBoard = new HashMap <>(); 
     }
     
     public void addScore(int playerId, int score) {
-        scores.compute(playerId, (k, v) -> v == null? score: v + score);
+        if(leaderBoard.containsKey(playerId)){
+            leaderBoard.replace(playerId, leaderBoard.get(playerId)+score);
+        }else{
+            leaderBoard.put(playerId, score);
+        }
     }
     
     public int top(int K) {
-        int sum = 0;
-        List<Integer> values = new ArrayList<>(scores.values());
-        Collections.sort(values, Collections.reverseOrder());
-        for (int i = 0; i < K; i++){
-            sum += values.get(i);
+        List <Integer> lead = new ArrayList <>(leaderBoard.values());
+        Collections.sort(lead, Collections.reverseOrder()); 
+        int res = 0;
+        for(int i = 0; i<K; i++){
+            res += lead.get(i);
         }
-        return sum;
+        return res;
     }
     
     public void reset(int playerId) {
-        scores.remove(playerId);
+        leaderBoard.replace(playerId, 0);
     }
 }
 
