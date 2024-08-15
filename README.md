@@ -40,4 +40,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0792-binary-search](https://github.com/orla-ske/LeetCodeRepo/tree/master/0792-binary-search) |
+## Linked List
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/orla-ske/LeetCodeRepo/tree/master/0002-add-two-numbers) |
+## Math
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/orla-ske/LeetCodeRepo/tree/master/0002-add-two-numbers) |
+## Recursion
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/orla-ske/LeetCodeRepo/tree/master/0002-add-two-numbers) |
 <!---LeetCode Topics End-->
