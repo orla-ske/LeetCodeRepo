@@ -10,6 +10,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/orla-ske/LeetCodeRepo/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0792-binary-search](https://github.com/orla-ske/LeetCodeRepo/tree/master/0792-binary-search) |
 | [1272-invalid-transactions](https://github.com/orla-ske/LeetCodeRepo/tree/master/1272-invalid-transactions) |
+| [1582-design-browser-history](https://github.com/orla-ske/LeetCodeRepo/tree/master/1582-design-browser-history) |
 ## Hash Table
 |  |
 | ------- |
@@ -27,6 +28,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/orla-ske/LeetCodeRepo/tree/master/0020-valid-parentheses) |
+| [1582-design-browser-history](https://github.com/orla-ske/LeetCodeRepo/tree/master/1582-design-browser-history) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -48,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/orla-ske/LeetCodeRepo/tree/master/0002-add-two-numbers) |
+| [1582-design-browser-history](https://github.com/orla-ske/LeetCodeRepo/tree/master/1582-design-browser-history) |
 ## Math
 |  |
 | ------- |
@@ -56,4 +59,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/orla-ske/LeetCodeRepo/tree/master/0002-add-two-numbers) |
+## Design
+|  |
+| ------- |
+| [1582-design-browser-history](https://github.com/orla-ske/LeetCodeRepo/tree/master/1582-design-browser-history) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [1582-design-browser-history](https://github.com/orla-ske/LeetCodeRepo/tree/master/1582-design-browser-history) |
+## Data Stream
+|  |
+| ------- |
+| [1582-design-browser-history](https://github.com/orla-ske/LeetCodeRepo/tree/master/1582-design-browser-history) |
 <!---LeetCode Topics End-->
