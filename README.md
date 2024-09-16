@@ -15,11 +15,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/orla-ske/LeetCodeRepo/tree/master/0001-two-sum) |
+| [0013-roman-to-integer](https://github.com/orla-ske/LeetCodeRepo/tree/master/0013-roman-to-integer) |
 | [0242-valid-anagram](https://github.com/orla-ske/LeetCodeRepo/tree/master/0242-valid-anagram) |
 | [1272-invalid-transactions](https://github.com/orla-ske/LeetCodeRepo/tree/master/1272-invalid-transactions) |
 ## String
 |  |
 | ------- |
+| [0013-roman-to-integer](https://github.com/orla-ske/LeetCodeRepo/tree/master/0013-roman-to-integer) |
 | [0020-valid-parentheses](https://github.com/orla-ske/LeetCodeRepo/tree/master/0020-valid-parentheses) |
 | [0125-valid-palindrome](https://github.com/orla-ske/LeetCodeRepo/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/orla-ske/LeetCodeRepo/tree/master/0242-valid-anagram) |
@@ -55,6 +57,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/orla-ske/LeetCodeRepo/tree/master/0002-add-two-numbers) |
+| [0013-roman-to-integer](https://github.com/orla-ske/LeetCodeRepo/tree/master/0013-roman-to-integer) |
 ## Recursion
 |  |
 | ------- |
